@@ -88,3 +88,92 @@
 .carousel-control-prev {
     width: 8% !important;
 }
+
+
+.carousel-control-prev {
+    left: -10rem !important;
+}
+
+.carousel-control-next {
+    right: -10rem !important;
+}
+
+.carousel-item {
+    &__details {
+        display: flex;
+        justify-content: center;
+
+        flex-direction: column;
+
+        p {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__main-head {
+        font-size: 5rem;
+        color: var(---color-green);
+
+        & span {
+            color: var(--color-dark);
+
+        }
+    }
+
+    &__sub-head {
+        font-size: 3rem;
+        color: var(---color-dark);
+        margin: 1.8rem 0;
+        font-weight: 400;
+    }
+
+    &__image {
+        height: 55rem;
+        padding: 4rem;
+        box-sizing: content-box;
+    }
+}
+
+//// category
+.category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3.5rem 0;
+
+    &__head {
+        font-size: 4rem;
+        font-weight: 400;
+    }
+
+    &__details {
+        font-size: 1.8rem;
+        font-weight: 300;
+        margin-top: 1rem;
+    }
+}
+
+.category-img-container {
+    display: flex;
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+    }
+
+    &__image {
+        height: 35rem;
+        border-radius: 50%;
+        border: solid 1px var(--color-lightGrey2);
+    }
+
+    &__name {
+        margin: 2rem 0;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
