@@ -1,0 +1,90 @@
+//// TOP NAV
+.top-nav-container {
+    color: var(--color-primary);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        color: var(--color-lightGrey2);
+    }
+}
+
+//// HEADER
+.header-area {
+    display: flex;
+    align-items: center;
+
+
+
+    &__logo {
+        color: var(---color-green);
+        font-size: 5rem;
+    }
+
+    &__nav {
+        list-style-type: none;
+        margin: 0 auto;
+        display: flex;
+
+
+    }
+
+    &__item {
+        padding: 0 4.5rem;
+        font-size: 2.25rem;
+        font-weight: 400;
+    }
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        color: var(--color-dark);
+    }
+
+    &__link:hover {
+        color: var(---color-green);
+    }
+
+    &__search-container {}
+
+    &__icon {
+        position: relative;
+    }
+
+    &__icon:link,
+    &__icon:visited {
+        text-decoration: none;
+        color: var(--color-dark);
+        font-size: 2rem;
+
+        &:not(:last-child) {
+            padding-right: 2rem;
+        }
+    }
+
+    &__notification {
+        border-radius: 50%;
+        position: absolute;
+        position: absolute;
+        top: -2.6rem;
+        left: 0px;
+        width: 2.8rem;
+        height: 2.8rem;
+        background-color: var(--color-lightGrey);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+}
+
+////carousel
+.carousel-control-next,
+.carousel-control-prev {
+    width: 8% !important;
+}

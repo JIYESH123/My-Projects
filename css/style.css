@@ -1,0 +1,124 @@
+:root {
+  --color-primary: #fff;
+  --color-secondary: #efefef;
+  --color-lightGrey: #e9eef5;
+  --color-lightWhite: #dcdde1;
+  --color-black-blue: #212934;
+  ---color-green: #59ab6e;
+  --color-dark: #212529;
+  --color-yellow: #ede861;
+  --color-darkGrey: #bcbcbc;
+  --color-lightGrey2: #cfd6e1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-dark);
+}
+
+.top-nav {
+  background-color: var(--color-black-blue);
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  height: 100px;
+  background-color: var(--color-primary);
+  box-shadow: 0 0.5rem 4rem rgba(0, 0, 0, 0.1);
+  align-items: center;
+  display: flex;
+}
+
+.carousel {
+  background-color: var(--color-secondary);
+}
+
+.top-nav-container {
+  color: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+}
+.top-nav-container__link:link, .top-nav-container__link:visited {
+  text-decoration: none;
+  color: var(--color-lightGrey2);
+}
+
+.header-area {
+  display: flex;
+  align-items: center;
+}
+.header-area__logo {
+  color: var(---color-green);
+  font-size: 5rem;
+}
+.header-area__nav {
+  list-style-type: none;
+  margin: 0 auto;
+  display: flex;
+}
+.header-area__item {
+  padding: 0 4.5rem;
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+.header-area__link:link, .header-area__link:visited {
+  text-decoration: none;
+  color: var(--color-dark);
+}
+.header-area__link:hover {
+  color: var(---color-green);
+}
+.header-area__icon {
+  position: relative;
+}
+.header-area__icon:link, .header-area__icon:visited {
+  text-decoration: none;
+  color: var(--color-dark);
+  font-size: 2rem;
+}
+.header-area__icon:link:not(:last-child), .header-area__icon:visited:not(:last-child) {
+  padding-right: 2rem;
+}
+.header-area__notification {
+  border-radius: 50%;
+  position: absolute;
+  position: absolute;
+  top: -2.6rem;
+  left: 0px;
+  width: 2.8rem;
+  height: 2.8rem;
+  background-color: var(--color-lightGrey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 8% !important;
+}
+
+/*# sourceMappingURL=style.css.map */
