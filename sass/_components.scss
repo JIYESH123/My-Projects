@@ -73,12 +73,13 @@
         left: 0px;
         width: 2.8rem;
         height: 2.8rem;
-        background-color: var(--color-lightGrey);
+        background-color: var(---color-green);
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 1.3rem;
         font-weight: 600;
+        color: var(--color-primary);
     }
 
 }
@@ -140,7 +141,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 3.5rem 0;
+    margin-bottom: 4rem;
 
     &__head {
         font-size: 4rem;
@@ -168,12 +169,224 @@
     &__image {
         height: 35rem;
         border-radius: 50%;
-        border: solid 1px var(--color-lightGrey2);
+        border: solid 1px var(--color-lightGrey);
     }
 
     &__name {
         margin: 2rem 0;
         font-size: 2rem;
         font-weight: 700;
+    }
+}
+
+.btn-green {
+    background-color: var(---color-green);
+    color: var(--color-primary);
+    font-size: 1.8rem;
+    padding: .75rem 1.5rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+
+///Features
+
+.featured-img-container {
+    display: flex;
+
+    &__card {
+        padding: 1rem;
+    }
+
+    &__rating {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0;
+        font-size: 2rem;
+        color: var(--color-darkGrey);
+    }
+
+    &__stars {
+        .filled {
+            color: var(--color-yellow);
+        }
+    }
+
+    &__price {
+        font-weight: 300;
+    }
+
+    &__card-title {
+        font-size: 2.5rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+
+    &__card-text {
+        font-size: 1.5rem;
+    }
+
+    &__review {
+        font-size: 1.5rem;
+        color: var(--color-darkGrey);
+    }
+}
+
+///Footer
+
+.footer-container {
+    display: flex;
+    color: var(--color-lightWhite);
+
+    &__footerlist {
+        padding: 1rem;
+
+
+    }
+
+
+    &__footerlist:first-of-type {
+        .footer-container__head {
+            color: var(---color-green);
+        }
+    }
+
+
+
+
+
+    &__head {
+
+        font-size: 3rem;
+        font-weight: 400;
+        margin-bottom: 1.8rem;
+        border-bottom: solid 1px var(--color-ligt-blue);
+        padding-bottom: 2rem;
+
+
+    }
+
+    &__list {
+        list-style: none;
+        font-size: 1.4rem;
+        padding: 0;
+
+        li {
+            font-size: 1.8rem;
+            font-weight: 200;
+            cursor: pointer;
+
+            &:not(:last-child) {
+                margin-bottom: 1.2rem;
+            }
+
+            &:hover {
+                color: var(---color-green);
+            }
+        }
+
+
+    }
+
+    &__social-icons-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: solid 1px var(--color-ligt-blue);
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+
+    }
+
+    &__social-icons {
+        display: flex;
+    }
+
+    &__icons {
+        font-size: 3rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 5rem;
+        height: 5rem;
+
+
+
+
+    }
+
+
+    &__icons:link,
+    &__icons:visited {
+        text-decoration: none;
+        color: var(--color-lightGrey2);
+        font-size: 3rem;
+        border: solid 1px var(--color-ligt-blue);
+        border-radius: 50%;
+        transition: all .7s;
+
+        &:not(:last-child) {
+            margin-right: 1.2rem;
+        }
+
+    }
+
+
+    &__icons:hover {
+        background-color: var(--color-lightGrey2);
+        color: var(--color-ligt-blue);
+
+    }
+
+    &__email {
+        flex: 0 1 30%;
+    }
+}
+
+.form-control {
+    background-color: transparent;
+    border: solid 1px var(--color-ligt-blue);
+    height: 4rem;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+
+    &:focus {
+        background-color: transparent !important;
+        outline: none !important;
+        border: solid 1px var(--color-ligt-blue) !important;
+    }
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #9a9999 !important;
+    font-size: 1.7rem;
+    font-weight: 300;
+
+}
+
+.btn-subscribe {
+    background-color: var(---color-green);
+    color: var(--color-lightGrey);
+    padding: 0 2rem;
+    font-size: 1.7rem;
+    font-weight: 300;
+
+
+    &:hover,
+    &:active {
+        background-color: var(---color-green) !important;
+        color: var(--color-lightGrey) !important;
+
+        padding: 0 2rem;
+        font-size: 1.7rem;
+        font-weight: 300;
+    }
+}
+
+.copy-riight-container {
+    &__copy-text {
+        font-size: 1.8rem;
+        color: var(--color-lightGrey2) !important;
     }
 }

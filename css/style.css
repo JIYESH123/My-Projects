@@ -9,6 +9,8 @@
   --color-yellow: #ede861;
   --color-darkGrey: #bcbcbc;
   --color-lightGrey2: #cfd6e1;
+  --color-ligt-blue: #2d343f;
+  --color-dark: #1d242d;
 }
 
 * {
@@ -32,25 +34,6 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: var(--color-dark);
-}
-
-.top-nav {
-  background-color: var(--color-black-blue);
-  height: 40px;
-  display: flex;
-  align-items: center;
-}
-
-.header {
-  height: 100px;
-  background-color: var(--color-primary);
-  box-shadow: 0 0.5rem 4rem rgba(0, 0, 0, 0.1);
-  align-items: center;
-  display: flex;
-}
-
-.carousel {
-  background-color: var(--color-secondary);
 }
 
 .top-nav-container {
@@ -108,12 +91,13 @@ body {
   left: 0px;
   width: 2.8rem;
   height: 2.8rem;
-  background-color: var(--color-lightGrey);
+  background-color: var(---color-green);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.3rem;
   font-weight: 600;
+  color: var(--color-primary);
 }
 
 .carousel-control-next,
@@ -161,7 +145,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 3.5rem 0;
+  margin-bottom: 4rem;
 }
 .category__head {
   font-size: 4rem;
@@ -186,12 +170,238 @@ body {
 .category-img-container__image {
   height: 35rem;
   border-radius: 50%;
-  border: solid 1px var(--color-lightGrey2);
+  border: solid 1px var(--color-lightGrey);
 }
 .category-img-container__name {
   margin: 2rem 0;
   font-size: 2rem;
   font-weight: 700;
+}
+
+.btn-green {
+  background-color: var(---color-green);
+  color: var(--color-primary);
+  font-size: 1.8rem;
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+}
+
+.featured-img-container {
+  display: flex;
+}
+.featured-img-container__card {
+  padding: 1rem;
+}
+.featured-img-container__rating {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: var(--color-darkGrey);
+}
+.featured-img-container__stars .filled {
+  color: var(--color-yellow);
+}
+.featured-img-container__price {
+  font-weight: 300;
+}
+.featured-img-container__card-title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.featured-img-container__card-text {
+  font-size: 1.5rem;
+}
+.featured-img-container__review {
+  font-size: 1.5rem;
+  color: var(--color-darkGrey);
+}
+
+.footer-container {
+  display: flex;
+  color: var(--color-lightWhite);
+}
+.footer-container__footerlist {
+  padding: 1rem;
+}
+.footer-container__footerlist:first-of-type .footer-container__head {
+  color: var(---color-green);
+}
+.footer-container__head {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 1.8rem;
+  border-bottom: solid 1px var(--color-ligt-blue);
+  padding-bottom: 2rem;
+}
+.footer-container__list {
+  list-style: none;
+  font-size: 1.4rem;
+  padding: 0;
+}
+.footer-container__list li {
+  font-size: 1.8rem;
+  font-weight: 200;
+  cursor: pointer;
+}
+.footer-container__list li:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+.footer-container__list li:hover {
+  color: var(---color-green);
+}
+.footer-container__social-icons-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: solid 1px var(--color-ligt-blue);
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+.footer-container__social-icons {
+  display: flex;
+}
+.footer-container__icons {
+  font-size: 3rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 5rem;
+  height: 5rem;
+}
+.footer-container__icons:link, .footer-container__icons:visited {
+  text-decoration: none;
+  color: var(--color-lightGrey2);
+  font-size: 3rem;
+  border: solid 1px var(--color-ligt-blue);
+  border-radius: 50%;
+  transition: all 0.7s;
+}
+.footer-container__icons:link:not(:last-child), .footer-container__icons:visited:not(:last-child) {
+  margin-right: 1.2rem;
+}
+.footer-container__icons:hover {
+  background-color: var(--color-lightGrey2);
+  color: var(--color-ligt-blue);
+}
+.footer-container__email {
+  flex: 0 1 30%;
+}
+
+.form-control {
+  background-color: transparent;
+  border: solid 1px var(--color-ligt-blue);
+  height: 4rem;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+}
+.form-control:focus {
+  background-color: transparent !important;
+  outline: none !important;
+  border: solid 1px var(--color-ligt-blue) !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9a9999 !important;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.btn-subscribe {
+  background-color: var(---color-green);
+  color: var(--color-lightGrey);
+  padding: 0 2rem;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+.btn-subscribe:hover, .btn-subscribe:active {
+  background-color: var(---color-green) !important;
+  color: var(--color-lightGrey) !important;
+  padding: 0 2rem;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.copy-riight-container__copy-text {
+  font-size: 1.8rem;
+  color: var(--color-lightGrey2) !important;
+}
+
+.top-nav {
+  background-color: var(--color-black-blue);
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  height: 100px;
+  background-color: var(--color-primary);
+  box-shadow: 0 0.5rem 4rem rgba(0, 0, 0, 0.1);
+  align-items: center;
+  display: flex;
+}
+
+.carousel {
+  background-color: var(--color-secondary);
+}
+
+.category-container {
+  padding: 5rem 0;
+}
+
+.featured-container {
+  background-color: var(--color-lightGrey);
+  padding: 5rem 0;
+}
+
+.card-body {
+  padding: 1.6rem;
+}
+
+.footer {
+  background-color: var(--color-black-blue);
+  padding: 5rem 0 0;
+}
+
+.copy-riight-container {
+  background-color: var(--color-dark);
+  padding: 3.5rem 0;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .example {
+    background: green;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .featured-img-container,
+  .category-img-container,
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .carousel-item__image {
+    height: 42rem;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {
+    background: orange;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {
+    background: pink;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

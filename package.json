@@ -1,7 +1,7 @@
 {
-  "name": "natours",
+  "name": "zay",
   "version": "1.0.0",
-  "description": "Landing page for natours",
+  "description": "Landing page for zay",
   "main": "index.js",
   "scripts": {
     "watch:sass": "npx sass sass/main.scss css/style.css --watch",

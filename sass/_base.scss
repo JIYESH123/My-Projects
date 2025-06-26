@@ -9,6 +9,8 @@
     --color-yellow: #ede861;
     --color-darkGrey: #bcbcbc;
     --color-lightGrey2: #cfd6e1;
+    --color-ligt-blue: #2d343f;
+    --color-dark: #1d242d;
 
 }
 
@@ -35,24 +37,4 @@ body {
     line-height: 1.6;
     color: var(--color-dark);
 
-}
-
-.top-nav {
-    background-color: var(--color-black-blue);
-    height: 40px;
-    display: flex;
-    align-items: center;
-
-}
-
-.header {
-    height: 100px;
-    background-color: var(--color-primary);
-    box-shadow: 0 .5rem 4rem rgba(0, 0, 0, 0.1);
-    align-items: center;
-    display: flex;
-}
-
-.carousel {
-    background-color: var(--color-secondary);
 }
